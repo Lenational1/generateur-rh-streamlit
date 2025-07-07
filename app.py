@@ -98,7 +98,7 @@ def generer_base_evaluations(df_personnel):
 
 # --- INTERFACE UTILISATEUR (UI) ---
 st.title("✨ Générateur de Données Avancé")
-st.markdown("Configurez et générez des jeux de données RH sur mesure pour vos analyses. Besoin d'une formation en management de la data RH ??|| fannyarouna@outlook.fr")
+st.markdown("Configurez et générez des jeux de données RH sur mesure pour vos analyses. Besoin d'une formation en management de la data RH ?? || Contactez moi : fannyarouna@outlook.fr")
 
 # == PANNEAU DE CONFIGURATION LATÉRAL ==
 with st.sidebar:
