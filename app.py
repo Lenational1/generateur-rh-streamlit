@@ -5,7 +5,7 @@ import random
 from datetime import datetime, timedelta
 from io import BytesIO
 
-# --- CONFIGURATION DE LA PAGE ---
+# --- CONFIGURATION DE LA PAGE --- Si tu vois cette page, félicitations, tu peux réadapter le code pour tes besoins. au besoin tu peux me faire signe au fannyarouna@outlook.fr
 st.set_page_config(page_title="Générateur de Données Avancé ", page_icon="✨", layout="wide")
 
 # --- LISTES DE BASE ---
