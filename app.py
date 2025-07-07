@@ -75,9 +75,9 @@ def generer_donnees_rh(params):
 
 def generer_base_paie(df_personnel):
     paie_data = []
-    salaire_base = {"Employé": (450000, 700000), "Agent de maîtrise": (650000, 1200000), "Cadre": (1100000, 3500000)}
+    salaire_base = {"Employé": (220000, 445000), "Agent de maîtrise": (450000, 850000), "Cadre": (850000, 1500000)}
     for _, row in df_personnel.iterrows():
-        salaire = random.randint(*salaire_base.get(row['Catégorie CSP'], (300000, 500000))) # Valeurs par défaut si catégorie inconnue
+        salaire = random.randint(*salaire_base.get(row['Catégorie CSP'], (120000, 500000))) # Valeurs par défaut si catégorie inconnue
         prime = random.randint(50000, 500000) if random.random() < 0.6 else 0
         paie_data.append({"Matricule": row['Matricule'], "Salaire de Base": salaire, "Prime Annuelle": prime})
     return pd.DataFrame(paie_data)
